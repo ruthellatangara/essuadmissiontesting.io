@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/essu2-b.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #36f46f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    font-weight: 600;
+}
+.text-box p{
+    margin: 15px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    font-weight: 500;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    color: #fff;
+    border: 1px solid #1f9425;
+    background: #1f9425;
+    transition: 1s;
+}
+nav .fa-solid{
+    display: none;
+}
+
+@media(max-width: 700px){
+    *{
+        overflow-x: hidden;
+    }
+    .nav-links ul li{
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .nav-links{
+        position: absolute;
+        background: #1f9425;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 10px;
+    }
+    .text-box h1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+   
+}
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.row2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 20%;
+    background: rgb(253, 253, 182);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+@media(max-width:700px){
+    h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .row2{
+        flex-direction: column;
+    }
+}
+
+.contacts{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/essu-gate.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.contacts h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width:700px){
+    .contacts h1{
+        font-size: 24px;
+    }
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.icons .fa-solid{
+    color: black;
+    justify-content: space-between;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.icons .fa-brands{
+    color: black;
+    justify-content: space-between;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+.login-body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(51, 50, 50, 0.7), rgba(51, 50, 50, 0.7)), url(img/essu3.jpg);
+    background-size: cover;
+}
+.container1{
+    position: relative;
+    max-width: 430px;
+    width:100%;
+    background: #fff;
+    border: 1px solid silver;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.container1 .forms{
+    padding: 30px;
+}
+.container1 .forms .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+.forms .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #1f9425;
+    border-radius: 25px;
+}
+.forms .input-fields{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 18px;
+}
+.input-fields input{
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.input-fields input:is(:focus, :valid){
+    border-bottom-color: #1f9425;
+}
+.input-fields i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+.input-fields i.icon{
+    left: 0;
+}
+.input-fields i.hide{
+    right: 0;
+}
+.input-fields input:is(:focus, :valid) ~ i{
+    color: #1f9425;
+}
+.forms a{
+    text-decoration: none;
+    margin-top: 20px;
+}
+.forms a:hover{
+    text-decoration: underline;
+}
+.forms .button{
+    margin-top: 35px; 
+}
+.forms .button input{
+    border: none;
+    background-color: #1c7921;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: #17691b;
+}
+.forms .login-signup{
+    margin-top: 20px;
+    text-align: center;
+}
+.error {
+    background: #F2DEDE;
+    color: red;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+ }
+ .success {
+    background: #D4EDDA;
+    color: #40754C;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+ }
+ 
